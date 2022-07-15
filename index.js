@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3050;
 
 app.get("/",(req,res)=>{
-    res.status(200).send("Healthy");
+    res.status(200).send("Healthy test");
 })
 
 
