@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Docker Status') {
             steps {
-                sudo systemctl status docker
+                sh "sudo systemctl status docker"
             }
         }
     }
