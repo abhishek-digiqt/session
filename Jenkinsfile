@@ -12,9 +12,9 @@ pipeline {
                 echo 'Testing...'
             }
         }
-        stage('Deploy') {
+        stage('Docker Status') {
             steps {
-                echo 'Deploying....'
+                sudo systemctl status docker
             }
         }
     }
